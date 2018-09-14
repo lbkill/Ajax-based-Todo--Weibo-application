@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
+    <style>
+        .register{
+            display: inline-block;
+            position: relative;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+<h2 class="register">注册</h2>
+<form class="pure-form pure-form-aligned" action="/user/register" method="post">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="name">Username</label>
+            <input id="name" type="text" name="username" placeholder="Username">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" placeholder="Password">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="foo">note</label>
+            <input id="foo" type="text" name="note" placeholder="Please enter a signature">
+        </div>
+
+        <div class="pure-controls">
+            <label for="cb" class="pure-checkbox">
+                <input id="cb" type="checkbox"> I've read the terms and conditions
+            </label>
+
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </fieldset>
+</form>
+<h3>{{result}}</h3>
+</body>
+</html>
